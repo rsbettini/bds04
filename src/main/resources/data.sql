@@ -8,10 +8,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 
-INSERT INTO tb_city(name) VALUES ('Sales');
-INSERT INTO tb_city(name) VALUES ('Management');
-INSERT INTO tb_city(name) VALUES ('Training');
-
 INSERT INTO tb_city(name) VALUES ('São Paulo');
 INSERT INTO tb_city(name) VALUES ('Brasília');
 INSERT INTO tb_city(name) VALUES ('Fortaleza');
