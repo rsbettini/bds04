@@ -49,7 +49,6 @@ public class EventControllerIT {
 		adminPassword = "123456";
 	}
 
-	//OK
 	@Test
 	public void insertShouldReturn401WhenNoUserLogged() throws Exception {
 
@@ -113,7 +112,6 @@ public class EventControllerIT {
 		result.andExpect(jsonPath("$.cityId").value(1L));
 	}
 
-	//OK
 	@Test
 	public void insertShouldReturn422WhenAdminLoggedAndBlankName() throws Exception {
 
@@ -156,7 +154,6 @@ public class EventControllerIT {
 		result.andExpect(jsonPath("$.errors[0].message").value("A data do evento não pode ser passada"));
 	}
 
-	//OK
 	@Test
 	public void insertShouldReturn422WhenAdminLoggedAndNullCity() throws Exception {
 
@@ -178,7 +175,6 @@ public class EventControllerIT {
 		result.andExpect(jsonPath("$.errors[0].message").value("Campo requerido"));
 	}
 
-	//OK
 	@Test
 	public void findAllShouldReturnPagedResources() throws Exception {
 		
